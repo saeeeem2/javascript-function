@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script type="text/javascript">   
+
+
+    function average(jum1,jum2,jum3,jum4,jum5){
+    var f = (jum1+jum2+jum3+jum4+jum5) / 5;
+      return f;
+   }
+   
+    function max(jum1,jum2,jum3,jum4,jum5){
+   var max = 0;
+   max = (max > jum1) ? max : jum1;
+   max = (max > jum2) ? max : jum2;
+   max = (max > jum3) ? max : jum3;
+   max = (max > jum4) ? max : jum4;
+   max = (max > jum5) ? max : jum5;
+    return max;
+   }
+    
+    function min(jum1,jum2,jum3,jum4,jum5){
+   var min = 100;
+   min = (min < jum1) ? min : jum1;
+   min = (min < jum2) ? min : jum2;
+   min = (min < jum3) ? min : jum3;
+   min = (min < jum4) ? min : jum4;
+   min = (min < jum5) ? min : jum5;
+    return min;
+   }
+
+   console.log('A학생 평균점수 ' + average(90,80,50,40,10) +'점 '+ ',최고점수 ' + max(90,80,50,40,10) +'점 '+    ', 최하점수 ' + min(90,80,50,40,10) +'점 '+ '입니다.');
+   console.log('B학생 평균점수 ' + average(90,30,100,50,50) +'점 '+ ',최고점수 ' + max(90,30,100,50,50)    +'점 '+', 최하점수 ' + min(90,30,100,50,50) +'점 '+ '입니다.');
+   console.log('C학생 평균점수 ' + average(20,30,60,50,20) +'점 '+ ',최고점수는 ' + max(20,30,60,50,20) + '점 '+   ', 최하점수 ' + min(20,30,60,50,20) +'점 '+ '입니다.');
+
+</script>
+</head>
+<body>
+</body>
+</html>
