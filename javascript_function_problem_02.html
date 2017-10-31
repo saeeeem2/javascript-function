@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+// 평가 점수의 합계를 구하는 함수
+function add(mid, end) {
+var result = "";
+for (var i = 0; i < mid; ++i)
+ {
+   result += "*";
+ }
+for (var i = 0; i < 10 - mid; ++i)
+ {
+   result += "_";
+ }
+result += " + ";
+for (var i = 0; i < end; ++i)
+ {
+    result += "*";
+ }
+for (var i = 0; i < 10 - end; ++i)
+ {
+   result += "_";
+ }
+result += " = ";
+for (var i = 0; i < mid + end; ++i)
+ {
+   result += "*";
+ }
+for (var i = 0; i < 20 - (mid + end); ++i)
+ {
+   result += "_";
+ }
+  return result;
+         } 
+             
+        var A_mid = 10;
+        var A_end = 8;
+        var B_mid = 1;
+        var B_end = 2;
+        var C_mid = 9;
+        var C_end = 5;
+console.log("A : " + add(A_mid, A_end)); // A 학생의 평가 점수 출력 
+console.log("B : " + add(B_mid, B_end)); // B 학생의 평가 점수 출력
+console.log("C : " + add(C_mid, C_end)); // C 학생의 평가 점수 출력 
+    </script>
+</head>
+<body>
+</body>
+</html>
